@@ -1,3 +1,5 @@
+#include <Trade\Trade.mqh>
+CTrade trade;
 
 void OnTick()
   {
@@ -16,6 +18,7 @@ void OnTick()
       if(last>smaArray[0])
         {
          Comment("Compra");
+         trade.Buy(5, _Symbol, ask, ask-5, ask+5, "");
         }
       else if(last<smaArray[0])
         {
