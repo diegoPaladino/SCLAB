@@ -26,6 +26,5 @@ void OnTick()
             Comment("Venda");
             trade.Sell(100, _Symbol, bid, bid+0.5, bid-0.5, ""); 
          }
-   Print(last);
-   Print(smaArray);
+   
   }
